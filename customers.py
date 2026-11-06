@@ -1,4 +1,14 @@
-# Exercise 1 
+# Reflection 1:
+# I would use .get() when some information might be missing.
+# I would use brackets when I know the information exists.
+# I think .get() is better when I am not sure.
+
+# Reflection 2:
+# This reminds me of using Excel to organize and calculate data.
+# I think Python is better for large amounts of data because
+# it can do the calculations automatically and save time.
+
+# Exercise 1: 
 customer = {
     "name": "Alice",
     "email": "alice@example.com",
@@ -12,7 +22,7 @@ print(customer["tier"])
 print(customer["ytd_spend"])
 print(customer)
 
-# Exercise 2 
+# Exercise 2:
 customer["phone"] = "123-456-7890"
 print(customer)
 
@@ -22,7 +32,7 @@ print(customer)
 del customer["email"]
 print(customer)
 
-# Exercise 3 
+# Exercise 3: 
 print(customer.get("email", "no email on file"))
 
 try:
@@ -30,7 +40,7 @@ try:
 except KeyError:
     print("KeyError: email not found")
 
-# Exercise 4
+# Exercise 4:
 for key, value in customer.items():
     print(f"{key}: {value}")
 
@@ -38,7 +48,7 @@ for key, value in customer.items():
 for key in customer:
     print(key)
 
-# Exercise 5 
+# Exercise 5: 
 tier_discounts = {
     "bronze": 0,
     "silver": 0.05,
@@ -56,7 +66,7 @@ print("Tier:", tier)
 print("Discount:", discount_rate * 100, "%")
 print("Final price: $", round(final_price, 2))
 
-# Exercise 6 
+# Exercise 6: 
 customers = [
     {"name": "Alice", "tier": "platinum"},
     {"name": "Bob", "tier": "gold"},
@@ -71,7 +81,7 @@ for person in customers:
 
     print(f"{name}: {tier}, discount: ${discount_amount:.2f}")
 
-# Exercise 7 
+# Exercise 7:
 catalog = {
     "Widget A": {"price": 9.99, "stock": 150},
     "Gadget C": {"price": 49.99, "stock": 8}
@@ -81,7 +91,7 @@ for product, details in catalog.items():
     if details["stock"] < 20:
         print(f"LOW STOCK: {product}")
 
-# Exercise 8 
+# Exercise 8: 
 transactions = [
     {"region": "South", "amount": 300},
     {"region": "North", "amount": 150},
